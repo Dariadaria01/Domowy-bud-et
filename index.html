@@ -9,11 +9,21 @@
 </head>
 
 <body>
+    <p id="total">Bilans wynosi zero</p>
     <form id="incomeForm"><input id="incomeTitle" type="text" name="incomeTitle" required />
         <input id="incomeAmount" type="number" name="incomeAmount" required min="0.01" step="0.01" />
         <button>Dodaj</button>
     </form>
+
+    <form id="expenseForm"><input id="expenseTitle" type="text" name="expenseTitle" required />
+        <input id="expenseAmount" type="number" name="expenseAmount" required min="0.01" step="0.01" />
+        <button>Dodaj</button>
+    </form>
+
     <ul id="incomeList"></ul>
+
+    <ul id="expenseList"></ul>
+
     <script src="index.js"></script>
 </body>
 
