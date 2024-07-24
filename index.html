@@ -1,30 +1,54 @@
 <!DOCTYPE html>
 <html lang="pl">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main.css" />
     <title>Document</title>
+  </head>
 
-</head>
+  <body>
+    <p class="text" id="total">Bilans wynosi zero</p>
+    <main class="main-section">
+      <section class="container">
+        <h1 class="header">Przychody</h1>
+        <form class="incomeForm" id="incomeForm">
+          <input placeholder= "Nazwa przychodu" id="incomeTitle" type="text" name="incomeTitle" required />
+          <input placeholder="Kwota"
+            id="incomeAmount"
+            type="number"
+            name="incomeAmount"
+            required
+            min="0.01"
+            step="0.01"
+          />
+          <button>Dodaj</button>
+        </form>
+        <ul id="incomeList"></ul>
+        <p>Suma przychodów: <span id="totalIncomes">0</span>zł</p>
+      </section>
 
-<body>
-    <p id="total">Bilans wynosi zero</p>
-    <form id="incomeForm"><input id="incomeTitle" type="text" name="incomeTitle" required />
-        <input id="incomeAmount" type="number" name="incomeAmount" required min="0.01" step="0.01" />
-        <button>Dodaj</button>
-    </form>
+      <section class="container">
+        <h1 class="header">Wydatki</h1>
 
-    <form id="expenseForm"><input id="expenseTitle" type="text" name="expenseTitle" required />
-        <input id="expenseAmount" type="number" name="expenseAmount" required min="0.01" step="0.01" />
-        <button>Dodaj</button>
-    </form>
+        <form class="expenseTitle" id="expenseForm">
+          <input placeholder="Nazwa wydatku" id="expenseTitle" type="text" name="expenseTitle" required />
+          <input placeholder="Kwota"
+            id="expenseAmount"
+            type="number"
+            name="expenseAmount"
+            required
+            min="0.01"
+            step="0.01"
+          />
+          <button>Dodaj</button>
+        </form>
+        <ul id="expenseList"></ul>
+        <p>Suma wydatków: <span id="totalExpenses">0</span>zł</p>
 
-    <ul id="incomeList"></ul>
-
-    <ul id="expenseList"></ul>
+      </section>
+    </main>
 
     <script src="index.js"></script>
-</body>
-
+  </body>
 </html>

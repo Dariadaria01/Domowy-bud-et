@@ -1,0 +1,32 @@
+/* .header {
+  position: relative;
+  margin-left: 490px;
+  bottom: 55px;
+}
+.header1 {
+  position: relative;
+  margin-left: 10px;
+}
+.incomeForm {
+  position: relative;
+  margin-left: 490px;
+  bottom: 55px;
+}
+.expenseTitle {
+  position: relative;
+  margin-left: 10px;
+  bottom: 74px;
+} */
+.text {
+  font-size: 30px;
+  margin: 0 auto;
+  border: 2px solid black;
+  width: fit-content;
+  padding: 10px;
+}
+.main-section{
+  display: flex;
+}
+.container{
+  margin: 0 auto;
+}
