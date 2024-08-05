@@ -1,6 +1,6 @@
-.text {
+.total {
   font-size: 30px;
-  margin: 0 auto;
+  margin: 0 auto 10px auto;
   border: 2px solid black;
   width: fit-content;
   padding: 10px;
